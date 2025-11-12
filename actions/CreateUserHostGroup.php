@@ -14,7 +14,7 @@
 
 declare(strict_types = 1);
 
-namespace Modules\Iahg\Actions;
+namespace Modules\HGCrreation\Actions;
 
 use CControllerResponseData;
 use CControllerResponseFatal;
@@ -73,14 +73,14 @@ class CreateUserHostGroup extends CAction {
 
 	private function createHostGroup($name, $prefixIndex, $prefixList) {
 		if (!isset($prefixList[$prefixIndex])) {
-			error(_('Invalid host group prefix'));
+			error(_('Invalid HostGroup prefix'));
 			return FALSE;
 		}
 
 		$hostgroupNew = $prefixList[$prefixIndex] . '/' . $name;
 
-		$messageSuccess = _('Group added');
-		$messageFailed = _('Cannot add group');
+		$messageSuccess = _('HostGroup Created');
+		$messageFailed = _('Cannot Create HostGroup');
 
 		$oldUserType = CApiService::$userData['type'];
 		$result = NULL;
@@ -148,8 +148,9 @@ class CreateUserHostGroup extends CAction {
         ];
 
 		$response = new CControllerResponseData($data);
-		$response->setTitle(_('Host group edit'));
+		$response->setTitle(_('Create HostGroup'));
 		$this->setResponse($response);
     }
 }
+
 ?>
