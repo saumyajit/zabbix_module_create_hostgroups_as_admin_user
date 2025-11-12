@@ -14,7 +14,7 @@
 
 declare(strict_types = 1);
 
-namespace Modules\Iahg;
+namespace Modules\HGCrreation;
 
 use APP;
 use CController as CAction;
@@ -53,4 +53,5 @@ class Module extends CModule {
 	 */
 	public function onTerminate(CAction $action): void {
 	}
+
 }
