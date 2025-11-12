@@ -1,33 +1,66 @@
-# IntelliTrend Zabbix Admin Hostgroups
+Zabbix Admin HostGroups
 
-This is a Zabbix frontend module that allows Zabbix Admin Users to create hostgroups within their write-accessible hostgroups.
+Zabbix Admin HostGroups is a Zabbix frontend module that allows Zabbix Admin users to create host groups within the scope of their existing write-accessible host groups.
+This extends the default Zabbix functionality, enabling admins (not just super admins) to better organize and manage hosts within their permitted domains.
+
+🧾 License
+
+This software is licensed under the GNU Lesser General Public License v3.0 (LGPL-3.0).
+For details, see the LICENSE
+ file.
+
+📦 Download
+
+You can find the latest version of the module for supported Zabbix releases on the GitHub Releases page
+.
+
+⚙️ Requirements
+
+Zabbix 6.0 or later
+
+Write access to the Zabbix frontend server file system
+
+🧩 Installation
+
+For Debian and Ubuntu systems, Zabbix frontend modules are typically located in:
+
+/usr/share/zabbix/modules/
 
 
+Copy the folder modules/admin-hostgroups to:
 
-## License
+/usr/share/zabbix/modules/admin-hostgroups
 
-This software is licensed under the GNU Lesser General Public License v3.0.
 
-## Download
+on your Zabbix frontend web server.
 
-You can find the latest versions for the respective Zabbix releases on the [Github releases page](https://github.com/saumyajit/zabbix_module_create_hostgroups_as_admin_users.git).
+In the Zabbix web interface, navigate to:
+Administration → General → Modules
 
-## Requirements
+Click Scan directory.
 
-- Zabbix 6.0 & Above
-- File write access to the Zabbix frontend server
+Enable the newly detected module Admin HostGroups.
 
-## Installation
+🚀 Usage
 
-For Debian and Ubuntu server, the Zabbix Frontend modules are usually placed in ``/usr/share/zabbix/modules/``.
+Once activated, a new menu entry “Create Host Groups (Admin)” will appear under:
+Data collections (visible to Zabbix Admin users).
 
-Copy the folder `modules/admin-hostgroups` to `/usr/share/zabbix/modules/admin-hostgroups` on the Zabbix frontend web server.
+The creation form closely resembles the default host group creation form used by Super Admins,
+but it is restricted to creating subgroups only under host groups where the current admin user has read/write permissions.
 
-Then go to `Administration`, `General`, `Modules`, click `Scan directory` and enable the new module in the list.
+💡 Example Use Case
 
-## Usage
+A Zabbix Admin responsible for a specific environment (e.g., Production or Development) can now create additional nested host groups within that environment — without requiring Super Admin privileges.
 
-Once the frontend module is activated, a new menu entry `Create admin host group` should appear for Zabbix admins under `Configuration`.
+🧱 Contributing
 
-The host group form is similar to the one for super admins, except it is limited to sub-groups to groups where the admin user has write permissions.
+Contributions, suggestions, and bug reports are welcome!
+Please open an issue or pull request on GitHub
+.
 
+🙌 Acknowledgements
+
+Developed and maintained by Saumyajit
+.
+Special thanks to the Zabbix community for continuous inspiration and support.
