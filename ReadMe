@@ -1,6 +1,6 @@
-Zabbix Admin HostGroups
+HostGroups Creation for Zabbix Admin users
 
-Zabbix Admin HostGroups is a Zabbix frontend module that allows Zabbix Admin users to create host groups within the scope of their existing write-accessible host groups.
+HostGroups Creation for Zabbix Admin users is a Zabbix frontend module that allows Zabbix Admin users to create host groups within the scope of their existing write-accessible host groups.
 This extends the default Zabbix functionality, enabling admins (not just super admins) to better organize and manage hosts within their permitted domains.
 
 🧾 License
