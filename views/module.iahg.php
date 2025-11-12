@@ -12,7 +12,7 @@
   * However you must not change author and copyright information.  
   */
 
-$widget = (new CHtmlPage())->setTitle(_('Create HostGroups'));
+$widget = (new CHtmlPage())->setTitle(_('Create Host Groups'));
 
 $form = (new CForm('post', (new CUrl('zabbix.php'))
 		->setArgument('action', 'iahg.create')
@@ -28,7 +28,7 @@ $type_select = (new CSelect('prefix'))
 
 $form_list = (new CFormList('hostgroupFormList'));
 $form_list->addRow(
-	(new CDiv(_('This form allows you to create HostGroups as Zabbix Admin (user) for HostGroups you have read/write access to.')))
+	(new CDiv(_('As a Zabbix Admin, you can use this form to create Host Groups for which you have read/write access to.')))
 		->addClass('table-forms-separator')
 );
 $form_list->addRow(
@@ -55,3 +55,4 @@ $widget->show();
 
 
 ?>
+
