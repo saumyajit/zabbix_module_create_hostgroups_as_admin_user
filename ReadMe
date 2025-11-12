@@ -27,10 +27,8 @@ For Debian and Ubuntu systems, Zabbix frontend modules are typically located in:
 /usr/share/zabbix/modules/
 
 
-Copy the folder modules/admin-hostgroups to:
-
-/usr/share/zabbix/modules/admin-hostgroups
-
+Copy the folder zabbix_module_create_hostgroups_as_admin_user to: /usr/share/zabbix/modules/zabbix_module_create_hostgroups_as_admin_user
+you can use git clone for best result.
 
 on your Zabbix frontend web server.
 
