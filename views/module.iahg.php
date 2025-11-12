@@ -12,7 +12,7 @@
   * However you must not change author and copyright information.  
   */
 
-$widget = (new CHtmlPage())->setTitle(_('Create Host Groups (Admin)'));
+$widget = (new CHtmlPage())->setTitle(_('Create HostGroups'));
 
 $form = (new CForm('post', (new CUrl('zabbix.php'))
 		->setArgument('action', 'iahg.create')
@@ -52,5 +52,6 @@ $form->addItem($tab);
 
 $widget->addItem($form);
 $widget->show();
+
 
 ?>
