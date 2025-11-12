@@ -1,0 +1,16 @@
+{
+	"manifest_version": 2,
+	"id": "admin_hostgroups",
+	"name": "Create Host Groups as Zabbix Admin",
+	"version": "1.0",
+	"namespace": "iahg",
+	"author": "Saumyajit Pramanik",
+	"url": "https://www.zabbix.com/",
+	"description": "Allows non-superadmin users to create hostgroups within their write-accessible hostgroups.",
+	"actions": {
+		"iahg.create": {
+			"class": "CreateUserHostGroup",
+			"view": "module.iahg"
+		}
+	}
+}
