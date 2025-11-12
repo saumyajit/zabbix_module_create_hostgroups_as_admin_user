@@ -1,7 +1,7 @@
 {
 	"manifest_version": 2,
 	"id": "admin_hostgroups",
-	"name": "Create Host Groups as Zabbix Admin",
+	"name": "Create Host Groups as Zabbix Admin User",
 	"version": "1.0",
 	"namespace": "HGCrreation",
 	"author": "Saumyajit Pramanik",
