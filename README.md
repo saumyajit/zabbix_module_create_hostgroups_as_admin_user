@@ -9,7 +9,7 @@ This software is licensed under the [GNU Lesser General Public License v3.0 (LGP
 
 ## 📦 Download
 
-You can find the latest version of the module for supported Zabbix releases on the [GitHub Releases page](https://github.com).
+You can find the latest version of the module for supported Zabbix releases on the [GitHub Releases page]([https://github.com](https://github.com/saumyajit/zabbix_module_create_hostgroups_as_admin_user).
 
 ## ⚙️ Requirements
 
@@ -50,7 +50,7 @@ A Zabbix Admin responsible for a specific environment (e.g., **Production** or *
 ## 🧱 Contributing
 
 Contributions, suggestions, and bug reports are welcome!  
-Please open an issue or pull request on [GitHub](https://github.com).
+Please open an issue or pull request on [GitHub](https://github.com/saumyajit/zabbix_module_create_hostgroups_as_admin_user).
 
 ## 🙌 Acknowledgements
 
